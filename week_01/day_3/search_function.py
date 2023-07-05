@@ -8,10 +8,17 @@ chickens = [
 
 # print(chickens[2]["eggs"])
 
-result = "Audrey not found!"
+# result = "Audrey not found!"
 
-for chicken in chickens:
-    if chicken["name"] == "Audrey":
-        result = chicken
+# for chicken in chickens:
+#     if chicken["name"] == "Audrey":
+#         result = chicken
     
-print(result)
+# print(result)
+
+def find_chicken_by_name(list, chicken_name):
+    for chicken in list:
+        if chicken["name"] == chicken_name:
+            return chicken
+        
+print(find_chicken_by_name(chickens, "Audrey"))
