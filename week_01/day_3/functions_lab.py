@@ -193,8 +193,15 @@ volume_of_cube function
 takes a parameter length_of_side
 returns the volume of a cube with that length_of_side
 """
+# def cube(length_of_side):
+#     return length_of_side * length_of_side * length_of_side
+
 def cube(length_of_side):
-    return length_of_side * length_of_side * length_of_side
+    return length_of_side**3
+
+# def cube(length_of_side):
+#     return pow(length_of_side, 3)
+
 print("------------------------------")
 print("By calculating the volume of a cube with the side of 3, I'm expecting it to be 27, and the result is")
 print(cube(3))
@@ -228,5 +235,5 @@ def farenheit_to_celcius_converter(temp_in_f):
 
 print("------------------------------")
 print("By converting 0 fahrenheit to celcius, I'm expecting it to be -17.78, and the result is")
-print(fah_round)
-print(farenheit_to_celcius_converter(75))
+# print(fah_round)
+print(farenheit_to_celcius_converter(0))
