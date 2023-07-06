@@ -229,11 +229,11 @@ print(el_reverso("Scotland"))
 # fah_value = fah_cel_calc(75)
 # fah_round = round(fah_value, 2)
 
-def farenheit_to_celcius_converter(temp_in_f):
+def fahrenheit_to_celcius_converter(temp_in_f):
     result = (temp_in_f - 32) * (5/9)
     return round(result, 2)
 
 print("------------------------------")
 print("By converting 0 fahrenheit to celcius, I'm expecting it to be -17.78, and the result is")
 # print(fah_round)
-print(farenheit_to_celcius_converter(0))
+print(fahrenheit_to_celcius_converter(0))
