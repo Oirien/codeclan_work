@@ -24,11 +24,17 @@ valkyrie = {
 
 # define a function that returns the value for HP
 def HP_lookup(ship_id):
-    for stats in ship_id:
-        return stats["hitpoints"]
-    
-print(HP_lookup(deimos))
+    return ship_id["hitpoints"]
+
 # define a function that returns the value for Damage
+def DMG_lookup(ship_id):
+    return ship_id["weapon"]["weapon_damage"]
+
+def armor_lookup(ship_id):
+    return ship_id["armor"]
+
+
+
 
 # define a function that returns the value for Armor
 
